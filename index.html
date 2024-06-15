@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>CSS Website Layout</title>
+
+<style>
+    *{
+     box-sizing: border-box;
+     }
+ body {
+    font-family: Arial;
+    padding: 10px;
+    background: # Thistle;
+    margin: 0;
+ }
+/* Header/Blog Title */
+.header {
+  background-image: url(profil.jpg);
+  padding: 55px;
+  text-align: center;
+  color:white;
+}
+.header h1 {
+  font-size: 50px;
+}
+/* style the top navigation bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* atyle the topnav link */
+.topnav a {
+  float: Left;
+  display: block;
+  color: lightblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+/* create two unequal columns that floats to each other */
+/* Left column */
+.leftcolumn {
+  float: Left;
+  width: 75%;
+}
+/*Right column */
+.rightcolumn {
+  float: Left;
+  width: 25%;
+    background-color: white;
+    padding-left: 20px;
+}
+/* fake image */
+.fakeimg {
+  background-color: white;
+  width: 100px;
+  padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: lightblue;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* clear floats after the columns */
+.row: after {
+   content: "";
+   display: table;
+   clear: both;
+}
+/* footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+}
+/*Responsive layout - when the screen is less than800px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+ }
+ /* Responsive layout - when the screen is less than 400px wide, make the navigation lik stack on to of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+    .topnav a {
+      float: none;
+      width: 100p%;
+    }
+}
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>My Website</h1>
+    <p>tells of someone who can only be admired but not owned</p>
+  </div>
+
+    <div class="topnav">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#" style="float:right">Link</a>
+    </div>
+              <div class="row">
+                <div class="leftcolumn">
+                  <div class="card">
+                   
+          <img src="2.jpg.jpg"height="500px"width="100%">
+         
+          <p>Apel adalah buah bercita rasa manis dan gurih.Variannya banyak,diantaranya apel merah dan hijau.Meski berbeda janis,keduanya memiliki kandungan gizi dan manfaat yang serupa.Buah yang berukuran sengenggaman tangan orang dewasa ini mengandung serat ,kalium,vitamin c,magnesium,dan fosfor.Sejumlah nutrisi ini berperan penting dalam menangkal dan mencerah paparan penyaki pada tubuh.Apel adalah makanan sehat yang nyaris tidak mengandung lemak dan bebas kolestrol.Selain itu ,didalamnya mengandung tinggi antioksidan,yakni senyawa tanaman,seperti flovoind,serat,air,vitamin dan mineral.Buah yang satu ini memang mengandung gula dankarbohidrat.namun,jenis karbohidrat didalamnya adalah karbohidrat kompleks yang tidak menyebabkan lonjakan kadar gula darh dalam tubuh.</p>
+        </div>
+    
+        <div class="card">
+        
+          <img src="3.jpg"height="600px"width="100%">
+          <p></p>
+          <p>Anggur adalah buah yang dihasilkan oleh tanaman perdu merambat dari keluarga Vitaceae.Buah ini umumnya bermanfaat sebagai jus anggur,selai minuman anggur,minyak biji anggur,kismis,atau konsumsi langsung.Selain itu,anggur juga terkenal karena kandungan senyawa polifenoldanresveratol yang berperan penting dalam berbagai proses metabolisme tubuh dan memiliki kemampuan untuk menvegah pembentukan sel kanker dalam penyakit lainnya.Kemampuan ini juga terkait dengan keberadaan senyawa metabolit sekunder dalam buah ini berfungsi sebagai antioksidan untuk melawan radikal bebas.Anggur termasuk salah satu buah dengan kandungan tembaga dan vitamin K yang cukup tinggi.Keduanya memiliki fungsi yang penting pada tubuh terkait produksi energi dan pembekuan darah.Begitu banyak nurisi dalam buah ini membuat anggur menjadi buah yang cocok untuk dikonsumsi setiap hari.</p>
+        </div>
+
+        <div class="card">
+          <h3></h3>
+          <img src="5.jpg"height=500px"width="100%">
+          <p>Strawberry adalah jenis buah beri yang biasanya berwarna merah atau merah muda,dengan biji biji kecil dipermukaan.Buah ini memiliki rasa manis dan seger,sering ada dalam berbagai hidagan,seperti kue,selai,eskrim,salad. Strawberry juga kaya alkan vitamin c dan serat,sehingga baik untuk kesehatan. Srtawberry juga mengandung antioksidan yang sangat tinggi. Ada berbagai jenis antioksidan didalamnya,seperti pelargonidin,asam elegat,ellagitannin, dan prosianidin</p>
+        </div>
+
+        <div class="card">
+          <h3></h3>
+         <img src="6.jpg"height="500px"width="100%">
+          <p>Melon adalah buah yang seger dan lezat yang banyak ditemukan di indonesia dan negara-negara lain di dunia.Buah ini memiliki kulit berwarna hijau atau kuning  dengan daging berwarna orange,putih,atau hijau,tergantung varietasnya.Selain memiliki tekstur yang renyah dan rasa manis yang menyegarkan melon juga memiliki kandungan nutrisi penting. Berdasarkan kandungannya ,tentu konsumsi melon dapat memberikan sejumlah manfaat bagi kesehatan tubuh,</p>
+        </div>
+
+        <div class="card">
+          <h4></h4>
+          <img src="7.jpg"height="500px"width="100%">
+          <p></p>
+          <p>Semangka merupakan buah kaya manfaat yang yang berasal dari daerah setengah gurun di Afrika bagian selatan. Tanaman ini memiliki hubungan kekerabatan dengan labu-labuan, melon, dan ketimun. Biasanya, semangka dipanen untuk buahnya yang dimakan segar atau dijadikan jus. 
+Buah semangka memiliki kulit yang keras dengan warna hijau pekat atau hijau muda dan larik-larik hijau tua. Tergantung pada jenisnya, daging buah semangka dapat berwarna merah atau kuning, dan ada semangka dengan biji serta semangka yang tidak memiliki biji.
+Buah ini juga mengandung banyak nutrisi penting yang bermanfaat untuk kesehatan tubuh.
+Buah semangka juga mengandung berbagai macam vitamin, seperti vitamin A, vitamin C, vitamin B6, dan asam folat, serta mineral seperti kalium dan magnesium.
+Selain itu, buah semangka juga mengandung senyawa fitokimia seperti likopen dan citrulline, yang berfungsi sebagai antioksidan dan meningkatkan kesehatan tubuh.
+Banyaknya kandungan nutrisi dalam buah ini, membuat kamu akan merasakan berbagai manfaat yang berguna untuk kesehatan.
+</p>
+</div>
+</div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h3>About me</h3>
+          <img src="about.jpg.jpg"height="200px"width="100%">
+          <p><p>Nama:Radita Dewi Hidayat<br>alamat:sukapura<br>jenis kelamin:perempuan<br>lalaradita079@gmail.com</p></p>
+        </div>
+
+        <div class="card">
+          <h3>Popular post</h3>
+        <img src="pp.jpg"height="200px"width="100%">
+        <img src="pp1.jpg"height="200px"width="100%">
+        <img src="pp2.jpg"height="200px"width="100%">
+        <img src="pp3.jpg"height="200px"width="100%">
+       
+        
+          </div>
+        <div class="card">
+          <h3></h3>
+      <h5>bukan seberapa lama,tapi seberapa kamuu hidup adalah hal yang utama</h5>
+      
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+      <p> Copyright &copy; raditadewi01. ALL right reserved.</p>
+    </div>
+
+  </body>
+  </html>
+</style>
+</head>
+<body>
+
+
+
